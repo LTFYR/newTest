@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan - Shoes Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <!-- Mobile Header Start-->
+
+        <div class="mobile-header fixed-top d-lg-none d-md-block">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12">
+                        <div class="mobile-main-header">
+                            <div class="mobile-logo">
+                                <a href="index.html">
+                                    <img src="images/logo.png" alt="Brand Logo">
+                                </a>
+                            </div>
+                            <div class="mobile-menu-toggler">
+                                <div class="mini-cart-wrap">
+                                    <a href="cart.html">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </a>
+                                </div>
+                                <div class="mobile-menu-btn d-sm-block d-lg-none">
+                                    <div class="off-canvas-btn">
+                                        <button class="btn shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"> <i class="fa-solid fa-bars"></i></button>
+                                     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                     <div class="offcanvas-header myheader">
+                                     <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"><input type="search" name="" id="" placeholder="Search here..." ><i class="fa-solid fa-magnifying-glass"></i></h5>
+                                      <div class="col-lg-12  d-block">
+                                     <div class="mainhead__main__navbar">
+                                       <ul class="mainhead__main__navbar__links d-lg-flex d-sm-block w-100">
+                                           <li class="mainhead__main__navbar__links__link active"><a href="">Home <span>+</span> </a>
+                                           <div class="mainhead__main__navbar__links__link__dropdown1">
+                                               <ul class="mainhead__main__navbar__links__link__dropdown__home">
+                                                  <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Home 1</a></li>
+                                                  <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Home 2</a></li>
+                                               </ul>
+                                           </div>
+                                          </li>
+                                           <li class="mainhead__main__navbar__links__link"><a href="">Pages<span>+</span></a>
+                                            <div class="mainhead__main__navbar__links__link__dropdown2">
+                                                <ul class="mainhead__main__navbar__links__link__dropdown2__pages">
+                                                    <a class="bld" href="">Column 01</a>
+                                                    <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Shop Left Sidebar</a></li>
+                                                    <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Shop Left Sidebar</a></li>
+                                                    <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Shop Left Sidebar</a></li>
+                                                    <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Shop Left Sidebar</a></li>
+                                                </ul>
+                                                <ul class="mainhead__main__navbar__links__link__dropdown2__pages">
+                                                  <a class="bld" href="">Column 01</a>
+                                                  <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Shop Left Sidebar</a></li>
+                                                  <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Shop Left Sidebar</a></li>
+                                                  <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Shop Left Sidebar</a></li>
+                                                  <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Shop Left Sidebar</a></li>
+                                              </ul>
+                                              <ul class="mainhead__main__navbar__links__link__dropdown2__pages">
+                                                  <a class="bld" href="">Column 01</a>
+                                                  <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Shop Left Sidebar</a></li>
+                                                  <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Shop Left Sidebar</a></li>
+                                                  <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Shop Left Sidebar</a></li>
+                                                  <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Shop Left Sidebar</a></li>
+                                              </ul>
+                                              <ul class="mainhead__main__navbar__links__link__dropdown2__pages">
+                                                  <a class="bld" href="">Column 01</a>
+                                                  <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Shop Left Sidebar</a></li>
+                                                  <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Shop Left Sidebar</a></li>
+                                                  <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Shop Left Sidebar</a></li>
+                                                  <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Shop Left Sidebar</a></li>
+                                              </ul>
+                                            </div>
+                                          </li>
+                                           <li class="mainhead__main__navbar__links__link"><a href="shop.html">Shop<span class="shopspan">+</span></a></li>
+                                           <li class="mainhead__main__navbar__links__link"><a href="blognosidebar.html">Blog <span class="blogspan">+</span></a>
+                                          <div class="mainhead__main__navbar__links__link__dropdown4">
+                                              <ul class="mainhead__main__navbar__links__link__dropdown__pages">
+                                                  <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="blognosidebar.html">Blog No Sidebar</a></li>
+                                                  <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Blog Right Sidebar</a></li>
+                                                  <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Blog Left Sidebar</a></li>
+                                                  <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="blog.html">Blog Details</a></li>
+                                                  <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Blog Details Audio</a></li>
+                                                  <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Blog Details Video</a></li>
+                                                  <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Blog Details Sidebar</a></li>
+                                              </ul>
+                                          </div>
+                                          </li>
+                                           <li class="mainhead__main__navbar__links__link"><a href="contactus.html">Contact us</a></li>
+                                       </ul>
+                                    </div>
+                                  </div>
+                                 <button type="button" class="item-3" data-bs-dismiss="offcanvas" aria-label="Close">X</button>
+                                  </div>
+                                 <div class="offcanvas-body">
+                                    <div class="currency">
+                                        <a href="">
+                                            <span>Currency</span>
+                                        </a>
+                                    </div>
+                                    <div class="myaccount">
+                                        <a href="">
+                                            <span>My Account</span>
+                                        </a>
+                                    </div>
+                                    <div class="contact">
+                                        <i class="fa-solid fa-mobile-screen-button"></i><span>0123456789</span>
+                                    </div>
+                                    <div class="location">
+                                        <i class="fa-regular fa-envelope"></i><span>info@yourdomain.com</span>
+                                    </div>
+                                </div>
+                                 </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Mobile Header End -->
+        <!-- Desktop Header Start -->
+        <div class="mainhead  d-lg-block d-none">
+            <div class="mainhead__tophead d-lg-flex d-none">
+                <div class="container ">
+                    <div class="row ">
+                        <div class="col-lg-6">
+                          <div class="mainhead__tophead__welcome d-lg-flex d-none">
+                              <p>Welcome to Juan online store</p>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="mainhead__tophead__settings d-lg-flex d-none">
+                                <ul class="mainhead__tophead__settings--currency">
+                                    <button>
+                                        <span>$ Dollar (US)</span>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                      </button>
+                                    <ul>
+                                        <li>
+                                            <a href="">$ Usd</a>
+                                          </li>
+                                          <li>
+                                            <a href="">€ EURO</a>
+                                          </li>
+                                    </ul>
+                                  </ul>
+                                  <ul class="mainhead__tophead__settings--language">
+                                    <button>
+                                        <img src="images/en.png" alt=""><span>English</span>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                      </button>
+                                      <ul>
+                                        <li><a href="">
+                                            <img src="images/en.png" alt=""><span>English</span>
+                                          </a></li>
+                                          <li><a href="">
+                                              <img src="images/fr.png" alt=""><span>France</span>
+                                          </a></li>
+                                      </ul>
+                                  </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            <div class="mainhead__main sticky">
+                <div class="container">
+                    <div class="row align">
+                        <div class="col-lg-2">
+                         <div class="mainhead__main__logo d-lg-block d-none">
+                            <a href="index.html"><img src="images/logo.png" alt=""></a>
+                         </div>
+                        </div>
+                        <div class="col-lg-8  d-lg-flex d-none">
+                          <div class="mainhead__main__navbar">
+                             <ul class="mainhead__main__navbar__links d-lg-flex d-sm-block w-100">
+                                 <li class="mainhead__main__navbar__links__link active"><a href="">Home <i class="fa fa-angle-down"></i> </a>
+                                 <div class="mainhead__main__navbar__links__link__dropdown1">
+                                     <ul class="mainhead__main__navbar__links__link__dropdown__home">
+                                        <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Home 1</a></li>
+                                        <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Home 2</a></li>
+                                     </ul>
+                                 </div>
+                                </li>
+                                 <li class="mainhead__main__navbar__links__link"><a href="">Pages<i class="fa fa-angle-down"></i></a>
+                                  <div class="mainhead__main__navbar__links__link__dropdown2">
+                                      <ul class="mainhead__main__navbar__links__link__dropdown2__pages">
+                                          <a class="bld" href="">Column 01</a>
+                                          <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Shop Left Sidebar</a></li>
+                                          <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Shop Left Sidebar</a></li>
+                                          <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Shop Left Sidebar</a></li>
+                                          <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Shop Left Sidebar</a></li>
+                                      </ul>
+                                      <ul class="mainhead__main__navbar__links__link__dropdown2__pages">
+                                        <a class="bld" href="">Column 01</a>
+                                        <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Shop Left Sidebar</a></li>
+                                        <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Shop Left Sidebar</a></li>
+                                        <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Shop Left Sidebar</a></li>
+                                        <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Shop Left Sidebar</a></li>
+                                    </ul>
+                                    <ul class="mainhead__main__navbar__links__link__dropdown2__pages">
+                                        <a class="bld" href="">Column 01</a>
+                                        <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Shop Left Sidebar</a></li>
+                                        <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Shop Left Sidebar</a></li>
+                                        <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Shop Left Sidebar</a></li>
+                                        <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Shop Left Sidebar</a></li>
+                                    </ul>
+                                    <ul class="mainhead__main__navbar__links__link__dropdown2__pages">
+                                        <a class="bld" href="">Column 01</a>
+                                        <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Shop Left Sidebar</a></li>
+                                        <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Shop Left Sidebar</a></li>
+                                        <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Shop Left Sidebar</a></li>
+                                        <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Shop Left Sidebar</a></li>
+                                    </ul>
+                                  </div>
+                                </li>
+                                 <li class="mainhead__main__navbar__links__link"><a href="shop.html">Shop<i class="fa fa-angle-down"></i></a></li>
+                                 <li class="mainhead__main__navbar__links__link"><a href="blognosidebar.html">Blog <i class="fa fa-angle-down"></i></a>
+                                <div class="mainhead__main__navbar__links__link__dropdown4">
+                                    <ul class="mainhead__main__navbar__links__link__dropdown__pages">
+                                        <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="blognosidebar.html">Blog No Sidebar</a></li>
+                                        <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Blog Right Sidebar</a></li>
+                                        <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Blog Left Sidebar</a></li>
+                                        <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="blog.html">Blog Details</a></li>
+                                        <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Blog Details Audio</a></li>
+                                        <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Blog Details Video</a></li>
+                                        <li class="mainhead__main__navbar__links__link__dropdown__home_links"><a href="">Blog Details Sidebar</a></li>
+                                    </ul>
+                                </div>
+                                </li>
+                                 <li class="mainhead__main__navbar__links__link"><a href="contactus.html">Contact us</a></li>
+                             </ul>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+ 
+                            <div class="mainhead__main__log">
+                                <div class="mainhead__main__log__icon  d-lg-flex d-none">
+                                    <a  href=""><i class="fa-solid fa-magnifying-glass"></i>
+                                        
+                                    </a>
+                                </div>
+                                <div class="mainhead__main__log__icon  d-lg-flex d-none">
+                                    <a href=""><i class="fa-solid fa-gear"></i></a>
+                                    <ul class="mainhead__main__log__icon__links">
+                                        <li class="mainhead__main__log__icon__links__link"><a href="">Login</a></li>
+                                        <li class="mainhead__main__log__icon__links__link"><a href="">Register</a></li>
+                                        <li class="mainhead__main__log__icon__links__link"><a href="">My Account</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mainhead__main__log__icon myoffcanvas d-lg-flex d-none">
+                                    <a href=""></i></a>
+                                
+                                  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fa-solid fa-bag-shopping"></i></button>
+                                  <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                                  <div class="offcanvas-header">
+                                 <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
+                                 <button type="button" class="item-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                  </div>
+                                 <div class="offcanvas-body">
+                                       <div class="offcanvas-cart">
+                                           <div class="offcanvas-cart__items">
+                                               <ul>
+                                                   <li class="d-flex">
+                                                       <div class="offcanvas-cart__items__image">
+                                                           <img src="images/cart-1.jpeg" alt="">
+                                                       </div>
+                                                       <div class="offcanvas-cart__content">
+                                                           <h6><a href="productdetails.html">Flowers bouquet pink for all flower lovers</a></h6>
+                                                           <div class="offcanvas-cart__content--detail d-flex">
+                                                            <span>1</span><p>x</p><span>$100.00</span>
+                                                           </div>
+                                                       </div>
+                                                       <div class="offcanvas-cart__closebtn">
+                                                           <button>x</button>
+                                                       </div>
+                                                   </li>
+                                                   <li class="d-flex">
+                                                    <div class="offcanvas-cart__items__image">
+                                                        <img src="images/cart-2.jpeg" alt="">
+                                                    </div>
+                                                    <div class="offcanvas-cart__content">
+                                                        <h6><a href="productdetails.html">Flowers bouquet pink for all flower lovers</a></h6>
+                                                        <div class="offcanvas-cart__content--detail d-flex">
+                                                         <span>1</span><p>x</p><span>$100.00</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="offcanvas-cart__closebtn">
+                                                        <button>x</button>
+                                                    </div>
+                                                   </li>
+                                               </ul>
+                                           </div>
+                                           <div class="offcanvas-cart__price">
+                                               <ul>
+                                                   <li class="d-flex">
+                                                      <h4>Sub-Total</h4><span>$300.00</span>
+                                                   </li>
+                                                   <li class="d-flex">
+                                                    <h4>Eco Tax(-2.00)</h4><span>$10.00</span>
+                                                 </li>
+                                                 <li class="d-flex">
+                                                    <h4>VAT (20%)</h4><span>$60.00</span>
+                                                 </li>
+                                                 <li class="d-flex">
+                                                    <h4>Total</h4><span>$370.00</span>
+                                                 </li>
+                                               </ul>
+                                           </div>
+                                           <div class="offcanvas-cart__buttons">
+                                               <button class="offcanvas-cart__buttons--view">
+                                                <i class="fa-solid fa-cart-shopping"></i>VIEW CART
+                                               </button>
+                                               <button class="offcanvas-cart__buttons--checkout">
+                                                <i class="fa-solid fa-right"></i>CHECKOUT
+                                               </button>
+                                           </div>
+                                       </div>
+                                     </div>
+                                 </div>
+                                </div>
+                                <div class="mainhead__main__log__icon d-none">
+                                    <div class="mainhead__main__log__icon--hamburger">
+                                        <a href=""><i class="fa-solid fa-bars"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Desktop Header End -->
+    </header>
+    <main>
+        <div class="blogarea-head">
+            <h1 class="blogarea-head__title">SHOP</h1>
+            <span class="blogarea-head__item"><a href="index.html">Home/</a></span>
+            <span class="blogarea-head__item5"><a href="shop.html">Shop/</a></span>
+            <span class="blogarea-head__item3"><a href="">Product Details</a></span>
+        </div>
+        <div class="productdetails-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="productdetails-main__top">
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <div class="productdetails-main__top__mainimage">
+                                        <img src="images/product-details-img1.jpeg" alt="">
+                                    </div>
+                                    <div class="productdetails-main__top__bottomimages">
+                                        <img src="images/product-details-img1.jpeg" alt="">
+                                        <img src="images/product-details-img2.jpeg" alt="">
+                                        <img src="images/product-details-img3.jpeg" alt="">
+                                        <img src="images/product-details-img4.jpeg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="productdetails-main__top__details">
+                                        <div class="productdetails-main__top__details__title">
+                                            <h3>Primitive Mens Premium Shoes</h3>
+                                        </div>
+                                        <div class="productdetails-main__top__details__review">
+                                            <p><a href="">1 Preview(s)</a></p>
+                                        </div>
+                                        <div class="productdetails-main__top__details__price">
+                                            <span class="productdetails-main__top__details__price--current">
+                                                $70.00
+                                            </span>
+                                            <span class="productdetails-main__top__details__price--old">
+                                                <del>$80.00</del>
+                                            </span>
+                                        </div>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus omnis non iste ea, autem dolorum necessitatibus, exercitationem ipsa voluptates aliquid asperiores esse tenetur adipisci ad eligendi et. Ab quibusdam totam aut laudantium quidem, iure ducimus placeat repudiandae? Commodi, provident itaque.</p>
+                                        <div class="productdetails-main__top__details__cart">
+                                            <div class="productdetails-main__top__details__cart__control">
+                                                <span>-</span><input type="text" name="" id="" value="1"><span>+</span>
+                                            </div>
+                                            <div class="productdetails-main__top__details__cart__btn">
+                                                <a href="cart.html">ADD TO CART</a>
+                                            </div>
+                                        </div>
+                                        <div class="productdetails-main__top__details__stock">
+                                            <h6>Availabilty:</h6>
+                                            <p>In Stock</p>
+                                        </div>
+                                        <div class="productdetails-main__top__details__socialmedia">
+                                            <h6>Share:</h6>
+                                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                            <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                                            <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productdetails-main__bottom">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="productdetails-main__bottom__comments">
+                                        <div class="productdetails-main__bottom__comments__nav">
+                                            <button class="productdetails-main__bottom__comments__nav__btn">
+                                                DESCRIPTION
+                                            </button>
+                                            <button class="productdetails-main__bottom__comments__nav__btn">
+                                                INFORMATION
+                                            </button>
+                                            <button class="productdetails-main__bottom__comments__nav__btn">
+                                                REVIEWS
+                                            </button>
+                                        </div>
+                                        <div class="productdetails-main__bottom__comments__content">
+                                            <div class="productdetails-main__bottom__comments__content__tab">
+                                                <div class="productdetails-main__bottom__comments__content__tab__first">
+                                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id laborum eaque fuga ipsum porro maiores sequi? Exercitationem eligendi beatae numquam, magnam dolorem aliquid ullam iusto quisquam nam, illo delectus modi ipsum quidem. Tempora harum accusamus, blanditiis debitis quidem recusandae? At dignissimos quas praesentium aliquam maiores architecto ratione eos fugiat iure?</p>
+                                                    <div class="details d-flex">
+                                                        <div class="details__image">
+                                                            <img src="images/services.jpeg" alt="">
+                                                        </div>
+                                                        <div class="details__description">
+                                                            <h3>Product Information:</h3>
+                                                            <ul>
+                                                                <li>
+                                                                    Lorem ipsum dolor sit amet consectetur adipisicing.
+                                                                </li>
+                                                                <li>
+                                                                    Lorem ipsum dolor sit amet.
+                                                                </li>
+                                                                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                                                <li>Lorem, ipsum dolor.</li>
+                                                                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi architecto laborum doloremque, veniam temporibus commodi officiis velit quibusdam cumque debitis, dolores sed laboriosam molestias? Hic labore adipisci maxime doloribus velit omnis necessitatibus nemo mollitia ipsum nobis voluptatibus beatae quae amet, tempore tempora at commodi vel! Iusto blanditiis hic expedita voluptas nobis modi, perspiciatis eius quidem, dicta incidunt, ipsa ipsum vel nostrum ad accusantium minima? Pariatur exercitationem nisi dolor eaque. Officiis at excepturi earum nemo nisi id assumenda aliquid molestias recusandae?</p>
+                                                </div>
+                                            </div>
+                                            <div class="productdetails-main__bottom__comments__content__tab">
+                                                <div class="productdetails-main__bottom__comments__content__tab__second">
+                                                    <table class="table table-bordered">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>color</td>
+                                                                <td>black, blue, red</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>size</td>
+                                                                <td>L, M, S</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="productdetails-main__bottom__comments__content__tab">
+                                                <div class="productdetails-main__bottom__comments__content__tab__third">
+                                                    <form action="">
+                                                        <h4>1 Review For <span>Chaz Kangeroo Hoodies</span></h4>
+                                                        <div class="form-details d-flex">
+                                                            <div class="form-details__image">
+                                                                <img src="images/avatarform.jpeg" alt="">
+                                                            </div>
+                                                            <div class="form-details__ratingcomment">
+                                                                <div class="form-details__ratingcomment__stars">
+                                                                    <span><i class="fa fa-star"></i></span>
+                                                                <span><i class="fa fa-star"></i></span>
+                                                                <span><i class="fa fa-star"></i></span>
+                                                                <span><i class="fa fa-star"></i></span>
+                                                                <span><i class="fa fa-star"></i></span>
+                                                                </div>
+                                                                <div class="form-details__ratingcomment__admin">
+                                                                    <h6>Admin - 30 Nov, 2018</h6>
+                                                                </div>
+                                                                <p>Aliquam fringilla euismod risus ac bibendum. Sed sit amet sem varius ante feugiat lacinia. Nunc ipsum nulla, vulputate ut venenatis vitae, malesuada ut mi. Quisque iaculis, dui congue placerat pretium, augue erat accumsan lacus</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="input-area">
+                                                            <label for="name">Your Name</label>
+                                                            <input type="text" name="" id="name">
+                                                        </div>
+                                                        <div class="input-area">
+                                                            <label for="email">Your Email</label>
+                                                            <input type="email" name="" id="email">
+                                                        </div>
+                                                        <div class="input-area">
+                                                            <label for="name">Your Review</label>
+                                                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                                                        </div>
+                                                        <div class="note-alert">
+                                                            <h6>Note: <span>HTML is not translated!</span></h6>
+                                                        </div>
+                                                        <div class="input-radio">
+                                                            <span>*</span><p>Rating</p>
+                                                            Bad
+                                                            <input type="radio" name="hello" id="">
+                                                            <input type="radio" name="hello" id="">
+                                                            <input type="radio" name="hello" id="">
+                                                            <input type="radio" name="hello" id="">
+                                                            <input type="radio" name="hello" id="" checked>
+                                                            Good
+                                                        </div>
+                                                        <div class="btn">
+                                                            <button>Continue</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="productdetails-main__bottom__recommended">
+                                        <div class="productdetails-main__bottom__recommended__title text-center">
+                                            <h2>Related Product</h2>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing</p>
+                                        </div>
+                                        <div class="owl-carousel myowl owl-theme">
+                                            <div class="item">
+                                                <div class="product-image">
+                                                    <a href="productdetails.html"><img src="images/product-1.jpeg" alt=""></a>
+                                                </div>
+                                                <div class="product-content">
+                                                    <div class="product-name">
+                                                        <h5>Leather Mens Slipper</h5>
+                                                    </div>
+                                                    <div class="product-price">
+                                                        <span class="newprice">
+                                                            $80.00
+                                                        </span>
+                                                        <span class="oldprice">
+                                                            <del>$70.00</del>
+                                                        </span>
+                                                    </div>
+                                                    <div class="product-links">
+                                                        <div class="product-icons1">
+                                                            <a class="heart" href=""><i class="fa-regular fa-heart"></i></a>
+                                                        </div>
+                                                        <div class="product-icons2">
+                                                            <a class="shopping" href=""><i class="fa-solid fa-bag-shopping"></i></a>
+                                                        </div>
+                                                      <div class="product-icons3">
+                                                        <a class="eye" href=""><i class="fa-solid fa-eye"></i></a>
+                                                      </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="product-image">
+                                                    <a href="productdetails.html"><img src="images/product-2.jpeg" alt=""></a>
+                                                </div>
+                                                <div class="product-content">
+                                                    <div class="product-name">
+                                                        <h5>Leather Mens Slipper</h5>
+                                                    </div>
+                                                    <div class="product-price">
+                                                        <span class="newprice">
+                                                            $80.00
+                                                        </span>
+                                                        <span class="oldprice">
+                                                            <del>$70.00</del>
+                                                        </span>
+                                                    </div>
+                                                    <div class="product-links">
+                                                        <div class="product-icons1">
+                                                            <a class="heart" href=""><i class="fa-regular fa-heart"></i></a>
+                                                        </div>
+                                                        <div class="product-icons2">
+                                                            <a class="shopping" href=""><i class="fa-solid fa-bag-shopping"></i></a>
+                                                        </div>
+                                                      <div class="product-icons3">
+                                                        <a class="eye" href=""><i class="fa-solid fa-eye"></i></a>
+                                                      </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="product-image">
+                                                    <a href="productdetails.html"><img src="images/product-3.jpeg" alt=""></a>
+                                                </div>
+                                                <div class="product-content">
+                                                    <div class="product-name">
+                                                        <h5>Leather Mens Slipper</h5>
+                                                    </div>
+                                                    <div class="product-price">
+                                                        <span class="newprice">
+                                                            $80.00
+                                                        </span>
+                                                        <span class="oldprice">
+                                                            <del>$70.00</del>
+                                                        </span>
+                                                    </div>
+                                                    <div class="product-links">
+                                                        <div class="product-icons1">
+                                                            <a class="heart" href=""><i class="fa-regular fa-heart"></i></a>
+                                                        </div>
+                                                        <div class="product-icons2">
+                                                            <a class="shopping" href=""><i class="fa-solid fa-bag-shopping"></i></a>
+                                                        </div>
+                                                      <div class="product-icons3">
+                                                        <a class="eye" href=""><i class="fa-solid fa-eye"></i></a>
+                                                      </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="product-image">
+                                                    <a href="productdetails.html"><img src="images/product-4.jpeg" alt=""></a>
+                                                </div>
+                                                <div class="product-content">
+                                                    <div class="product-name">
+                                                        <h5>Leather Mens Slipper</h5>
+                                                    </div>
+                                                    <div class="product-price">
+                                                        <span class="newprice">
+                                                            $80.00
+                                                        </span>
+                                                        <span class="oldprice">
+                                                            <del>$70.00</del>
+                                                        </span>
+                                                    </div>
+                                                    <div class="product-links">
+                                                        <div class="product-icons1">
+                                                            <a class="heart" href=""><i class="fa-regular fa-heart"></i></a>
+                                                        </div>
+                                                        <div class="product-icons2">
+                                                            <a class="shopping" href=""><i class="fa-solid fa-bag-shopping"></i></a>
+                                                        </div>
+                                                      <div class="product-icons3">
+                                                        <a class="eye" href=""><i class="fa-solid fa-eye"></i></a>
+                                                      </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="total">
+            <div class="total__locationandlinks">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="total__locationandlinks__text mr">
+                                <div class="total__locationandlinks__text__title">
+                                    <h5>My Account</h5>
+                                </div>
+                                <div class="total__locationandlinks__text__details">
+                                    <ul class="total__locationandlinks__text__details__links">
+                                        <li class="total__locationandlinks__text__details__links__link">
+                                            <i class="fa-solid fa-location-dot"></i>184 Main Rd E, St Albans VIC 3021, Australia
+                                        </li>
+                                        <li class="total__locationandlinks__text__details__links__link">
+                                            <i class="fa-regular fa-envelope"></i>Mail us: <a href="">
+                                                youremail@gmail.com
+                                            </a>
+                                        </li>
+                                        <li class="total__locationandlinks__text__details__links__link">
+                                            <i class="fa-solid fa-phone"></i>
+                                            Phone:
+                                            <a href="">+88 123 45 6789</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="total__locationandlinks__text">
+                                <div class="total__locationandlinks__text__title">
+                                    <h5>Categories</h5>
+                                </div>
+                                <div class="total__locationandlinks__text__details">
+                                    <ul class="total__locationandlinks__text__details__links">
+                                        <li class="total__locationandlinks__text__details__links__link">
+                                           <a href="">Ecommerce</a>
+                                        </li>
+                                        <li class="total__locationandlinks__text__details__links__link">
+                                            <a href="">Shopify</a>
+                                         </li>
+                                         <li class="total__locationandlinks__text__details__links__link">
+                                            <a href="">Prestashop</a>
+                                         </li>
+                                         <li class="total__locationandlinks__text__details__links__link">
+                                            <a href="">Opencart</a>
+                                         </li>
+                                         <li class="total__locationandlinks__text__details__links__link">
+                                            <a href="">Magento</a>
+                                         </li>
+                                         <li class="total__locationandlinks__text__details__links__link">
+                                            <a href="">Jigoshop</a>
+                                         </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="total__locationandlinks__text">
+                            <div class="total__locationandlinks__text__title">
+                                <h5>Information</h5>
+                            </div>
+                            <div class="total__locationandlinks__text__details">
+                                <ul class="total__locationandlinks__text__details__links">
+                                    <li class="total__locationandlinks__text__details__links__link">
+                                       <a href="">Home</a>
+                                    </li>
+                                    <li class="total__locationandlinks__text__details__links__link">
+                                       <a href="">About us</a>
+                                    </li>
+                                    <li class="total__locationandlinks__text__details__links__link">
+                                        <a href="contactus.html">Contact us</a>
+                                     </li>
+                                     <li class="total__locationandlinks__text__details__links__link">
+                                        <a href="">Returns & Exchanges</a>
+                                     </li>
+                                     <li class="total__locationandlinks__text__details__links__link">
+                                        <a href="">Shipping & Delivery</a>
+                                     </li>
+                                     <li class="total__locationandlinks__text__details__links__link">
+                                        <a href="">Privacy Policy</a>
+                                     </li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="total__locationandlinks__text ml">
+                        <div class="total__locationandlinks__text__title ms-5 ps-4">
+                            <h5>Quick Links</h5>
+                        </div>
+                        <div class="total__locationandlinks__text__details">
+                            <ul class="total__locationandlinks__text__details__links ms-5">
+                                <li class="total__locationandlinks__text__details__links__link">
+                                   <a href="">Store Location</a>
+                                </li>
+                                <li class="total__locationandlinks__text__details__links__link">
+                                    <a href="">My Account</a>
+                                 </li>
+                                 <li class="total__locationandlinks__text__details__links__link">
+                                    <a href="">Orders Tracking</a>
+                                 </li>
+                                 <li class="total__locationandlinks__text__details__links__link">
+                                    <a href="">Size Guide</a>
+                                 </li>
+                                 <li class="total__locationandlinks__text__details__links__link">
+                                    <a href="">Shopping Rates</a>
+                                 </li>
+                                 <li class="total__locationandlinks__text__details__links__link">
+                                    <a href="">Contact Us</a>
+                                 </li>
+                            </ul>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="total__bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 order-2">
+                            <div class="total__bottom__copyright">
+                                <p>© 2021 <b>Juan</b> Made with <i class="fa fa-heart text-primary"></i> by <a href="https://hasthemes.com/"><b>HasThemes</b></a></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 order-1">
+                            <div class="total__bottom__socialmedia">
+                                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="scrolling hide">
+        <i class="fa fa-angle-up"></i>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="assets/js/owlcarousel.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

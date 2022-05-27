@@ -1,0 +1,74 @@
+@import "../assets/mixins.scss";
+@import "../assets/colors.scss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+
+.myInp{
+    position: relative;
+    top: 13px;
+}
+
+.menuNav{
+  width: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  right: 1px;
+  bottom:10px;
+  margin-bottom: 50px;
+}
+
+.itemmm{
+  overflow: hidden;
+}
+
+.btnNav{
+  display: block;
+  background: white;
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 8px;
+  color: black;
+}
+
+.btnNav:before{
+  content: "";
+  position: absolute;
+  background:white;
+}
+
+.btnNav  i{
+}
+
+.smenu{
+  background: white;
+  transition: max-height .3s;
+  max-height: 0;
+}
+
+.smenu a{
+  display: block;
+  font-size: 14px;
+  position: relative;
+  color: black;
+  text-decoration: none;
+}
+
+.smenu a::before{
+  content: "";
+  position: absolute;
+  width: 5px;
+  background: white;
+  left: 0;
+  top: 0;
+  transition: linear .3s;
+  opacity: 0;
+}
+
+.smenu a::hover:before{
+  opacity: 1;
+}
+
+.itemmm:target .smenu{
+  max-height: 4em;
+}

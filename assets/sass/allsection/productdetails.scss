@@ -1,0 +1,467 @@
+@import "../assets/mixins.scss";
+@import "../assets/colors.scss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+.blogarea-head{
+
+    &__item5{
+        a{
+            color: black;
+        }
+    }
+    &__item3{
+        a{
+        color: $main;
+
+        }
+    }
+}
+.productdetails-main{
+    padding: 80px 0;
+
+    &__top{
+        display: flex;
+        justify-content: space-between;
+
+        &__details{
+            line-height: 2;
+
+
+            &__socialmedia{
+                display: flex;
+                gap: 10px;
+
+                h6{
+                    line-height: 2;
+                }
+                a{
+                    background-color: white;
+                    width: 36px;
+                    height: 36px;
+                    text-align: center;
+                    border: 1px solid rgba(182, 173, 173, 0.471);
+                    color: $secondary;
+                    opacity: 0.6;
+
+                    &:hover{
+                        color: white;
+                        background-color: $main;
+                        opacity: 1;
+                    }
+                }
+            }
+            &__stock{
+                display: flex;
+                line-height: 2;
+
+                p{
+                    padding-left: 10px;
+                    color: rgb(47, 202, 47);
+                }
+                h6{
+                    line-height: 2;
+                }
+            }
+
+            &__cart{
+
+                display: flex;
+                gap: 10px;
+                &__btn{
+
+                    a{
+                        background-color: $secondary;
+                        color: $main;
+                        text-decoration: none;
+                        text-align: center;
+                        font-size: 14px ;
+                        padding: 14px 26px;
+                        opacity: 0.8;
+                }
+                }
+
+                &__control{
+                    border: 1px solid rgba(165, 161, 161, 0.326);
+                    width: 80px;
+                    height: 45px;
+                    position: relative;
+                    top: -6px;
+                    text-align: center;
+                    display: flex;
+                    justify-content: space-around;
+                    input{
+                        width: 30px;
+                        border: 0;
+                        text-align: center;
+                    }
+                    span:first-child{
+                        cursor: pointer;
+                        display: flex;
+                        margin-left: 14px;
+                        justify-content: center;
+                        align-items: center;
+                    }span:last-child{
+                        cursor: pointer;
+                        display: flex;
+                        margin-right: 14px;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+
+            &__price{
+                span{
+                    font-weight: 500;
+                    font-size: 18px;
+                }
+            }
+
+            &__review{
+                p{
+                    a{
+                        text-decoration: none;
+                        color: $main;
+                    }
+                }
+            }
+        }
+
+
+        &__mainimage{
+            border: 1px solid rgba(165, 161, 161, 0.326);
+            width: 460px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            img{
+                width: 450px;
+                overflow-x: scroll;
+
+                &:hover{
+                    transform: scale(2);
+                    cursor: zoom-in;
+                }
+            }
+        }
+        &__bottomimages{
+            
+            img{
+                width: 112px;
+                cursor: pointer;
+                border: 1px solid rgba(165, 161, 161, 0.326);
+            }
+        }
+    }
+    &__bottom{
+        padding: 60px 0;
+
+
+        &__recommended{
+            .product-links{
+                
+            }
+        }
+        &__comments{
+
+            &__content{
+
+                &__tab{
+                    padding: 0 0 30px 0;
+
+                    &__second{
+                        padding: 18px 14px 10px 14px;
+                        border: 1px solid gainsboro;
+
+                        table{
+                            
+                        }
+                    }
+                    &__third{
+
+                        form{
+
+                            .input-radio{
+                                
+
+                                display: flex;
+                                gap: 10px;
+
+                                input{
+                                    margin-top: 8px;
+                                }
+                                
+                            }
+                            .note-alert{
+                                h6{
+                                    color: red;
+    
+                                    span{
+                                        color: rgba(0, 0, 0, 0.5);
+                                    }
+                                }
+                            }
+
+                            .btn{
+
+                                button{
+                                    border: 0;
+                                    background-color: transparent;
+                                }
+                            }
+
+                            .input-area{
+                                display: grid;
+                                padding: 16px 0;
+
+                                input{
+                                    border: 1px solid gainsboro;
+                                    height: 38px;
+                                    border-radius: 2.5px;
+                                }
+
+                                textarea{
+                                    height: 62px;
+                                    border: 1px solid gainsboro;
+                                }
+                            }
+                            padding: 20px ;
+                            border: 1px solid gainsboro;
+                            h4{
+                                font-size: 18px;
+                                span{
+                                    color: $main;
+                                }
+                            }
+
+                            .form-details{
+
+                                display: flex;
+                                gap: 10px;
+                                &__ratingcomment{
+
+                                    
+                                    p{
+                                        font-size: 12px;
+                                        margin-left: 10px;
+                                    }
+                                    &__admin{
+                                        margin-left: 10px;
+                                        h6{
+                                            font-size: 14px;
+                                        }
+                                    }
+                                    border: 1px solid gainsboro;
+                                    &__stars{
+                                        margin-left: 10px;
+
+                                        span{
+                                            i{
+                                                font-size: 14px;
+                                                color: $main;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &__first{
+                        border: 1px solid gainsboro;
+                        padding: 10px 20px;
+
+                        .details{
+                            font-family: 'Montserrat', sans-serif;
+
+                            &__description{
+                                padding: 10px 0;
+                                h3{
+                                    color: $main;
+                                    margin-left: 40px;
+                                    font-size: 20px;
+                                    font-family: 'Montserrat', sans-serif;
+                                }
+                            }
+
+                            &__image{
+                                padding: 10px 0;
+                                img{
+                                    width: 300px;
+                                }
+                            }
+                        }
+                        @media only screen and (max-width: 700px){
+                           .details{
+                               display: block !important;
+
+                               &__description{
+                                   position: relative;
+                                   left: -30px;
+
+                                   h3{
+                                       width: 100%;
+                                       position: relative;
+                                       left: -10px;
+                                   }
+                               }
+                            &__image{
+                                padding: 0;
+                                padding-bottom: 10px;
+                                img{
+                                    width: 250px;
+                                }
+                            }
+                           }
+                        }
+
+                    }
+                }
+            }
+
+            &__nav{
+                .productdetails-main__bottom__comments__nav__btn.active{
+                    background-color: white;
+                    color: $secondary;
+                }
+
+                button{
+                    border: 1px solid rgba(128, 128, 128, 0.322);
+                    background-color: gray;
+                    color: white;
+                    padding: 6px;
+
+                    &:hover{
+                        background-color: white;
+                        color: gray;
+                    }
+                }
+                
+
+                @media only screen and (max-width: 700px){
+                        button{
+                            width: 94px;
+                            font-size: 10px;
+                            height: 36px;
+                        }
+                }
+            }
+        }
+        .item{
+            border: 1px solid #e5e5e5;
+            border-radius: 4px;
+            text-align: center;
+            margin: 0 15px;
+            position: relative;
+            margin-bottom: 50px;
+            height: 400px;
+            transition: 0.8s ease-in-out;
+
+            .product-image{
+                overflow: hidden;
+
+                img{
+                    overflow: hidden;
+                    transition: 0.6s ease-in-out;
+
+                    &:hover{
+                        transform: scale(1.2);
+                        overflow: hidden;
+                    }
+                }
+            }
+
+            &:hover{
+                border: 1px solid $main;
+            }
+            &:hover .product-icons1{
+                position: relative;
+                right: 0;
+                transition: 0.4s ease-in-out;
+                transform: translateX(-60px);
+            }
+            &:hover .product-icons3{
+                position: relative;
+                right: 0;
+                transition: 0.4s ease-in-out;
+                transform: translateX(60px);
+            }
+
+
+            .product-links{
+                position: absolute;
+                bottom: -28px;
+                left: 54px;
+                display: flex;
+                gap: 10px;
+
+                .product-icons1{
+                    position: relative;
+                    background-color: white;
+                    left: 60px;
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid $main;
+                    border-radius: 50%;
+                }
+                .product-icons2{
+                    position: relative;
+                    background-color: white;
+                    width: 50px;
+                    z-index: 10;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid $main;
+                    border-radius: 50%;
+                }
+                .product-icons3{
+                    position: relative;
+                    right: 60px;
+                    background-color: white;
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid $main;
+                    border-radius: 50%;
+                }
+
+                a{
+                    
+                    text-decoration: none;
+                    color: goldenrod;
+                }
+
+                i{
+                    // border: 1px solid goldenrod;
+                    font-size: 24px;
+                    border-radius: 50%;
+                    background-color: white;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 700px){
+        padding: 10px 0 !important;
+        &__top{
+
+            &__mainimage{
+                width: 300px;
+                img{
+                    width: 260px;
+                }
+            }
+            &__bottomimages{
+
+                img{
+                    width: 70px;
+                }
+            }
+        }
+    }
+}
